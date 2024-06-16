@@ -28,11 +28,89 @@
                     <span class="menu-text">settings</span>
             </a>
         </div>    
-    
-    
-        <div class="content"> This is settings page</div>
-    
-    
-    </div> 
+         <div class="content"> <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Settings</title>
+                <link rel="stylesheet" href="styles.css"> 
+            </head>
+            <body>
+                <header>
+                    <h1>Settings</h1>
+                </header>
+                <main>
+                    <section>
+                        <br/><br/>
+                        <h2>Profile Settings</h2>
+                        <form>
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" >
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" >
+                            
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password">
+                            
+                            <button type="submit">Save Changes</button>
+                        </form>
+                    </section>
+                    
+                    <section>
+                        <br/><br/>
+                        <h2>Notification Settings</h2>
+                        <form>
+                            <label for="notifications">Receive notifications:</label>
+                            <input type="checkbox" id="notifications" name="notifications" checked>
+                            
+                            <label for="notification-frequency">Notification frequency:</label>
+                            <select id="notification-frequency" name="notification-frequency">
+                                <option value="immediately">Immediately</option>
+                                <option value="hourly">Hourly</option>
+                                <option value="daily">Daily</option>
+                            </select>
+                            
+                            <button type="submit">Save Changes</button>
+                        </form>
+                    </section>
+                    
+                    <section>
+                        <br/><br/>
+                        <h2>Security Settings</h2>
+                        <form>
+                            <label for="two-factor-auth">Two-factor authentication:</label>
+                            <input type="checkbox" id="two-factor-auth" name="two-factor-auth">
+                            
+                            <label for="password-reset">Password reset:</label>
+                            <select id="password-reset" name="password-reset">
+                                <option value="enabled">Enabled</option>
+                                <option value="disabled">Disabled</option>
+                            </select>
+                            
+                            <button type="submit">Save Changes</button>
+                        </form>
+                    </section>
+                </main>
+                <footer>
+                    <p>&copy; 2024 Settings Page</p>
+                </footer>
+            </body>
+            </html></div>
+        </div> 
+    </div>
+    <div class="bottom-navigation-bar">
+        <a class="bottom-menu-item" href="./navbar.html">
+            <img src="./img/home.png" class="bottom-menu-icon bottom-menu-icon-active"/>
+        </a>
+        <a class="bottom-menu-item" href="./courses.html">
+            <img src="./img/book.png" class="bottom-menu-icon bottom-menu-icon-active"/>
+        </a>
+        <a class="bottom-menu-item" href="./profile.html">
+            <img src="./img/profile.png" class="bottom-menu-icon bottom-menu-icon-active"/>
+        </a>
+        <a class="bottom-menu-item" href="./settings.html">
+            <img src="./img/setting.png" class="bottom-menu-icon bottom-menu-icon-active"/>
+        </a>
+     </div>
 </body>
 </html>
