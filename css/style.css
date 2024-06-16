@@ -180,6 +180,7 @@ body {
     border: 1px solid #ddd;
     padding: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0.2, 0.3);
+    
    }
    
    .course-card h2 {
@@ -213,6 +214,9 @@ body {
             display: block;
             justify-content: space-around;
         }
+        .course-card{
+            width:200px ;
+        }
     } 
      /*normal devices*/
      @media screen and (min-width:601px) and(max-width:768px){
@@ -223,9 +227,15 @@ body {
                 display: block;
                 justify-content: space-around;
             } 
+            .course-card{
+                width:300px;
+            }
         }
         /*tablets devices*/
      @media screen and (min-width:769px) and(max-width:992px){
+        .course-card{
+            width:400px;
+        }
     }
     /*large devices*/
     @media screen and (min-width:993px) and(max-width:1250px){
